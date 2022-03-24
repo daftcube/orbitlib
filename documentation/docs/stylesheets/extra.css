@@ -7,6 +7,7 @@
     --md-accent-fg-color--dark:   #a30000;
 }
 
+
 .unitSpan {
     font-size: 0.75rem;
     margin-left: 0.5rem;
@@ -29,7 +30,6 @@
     background-repeat: no-repeat;
     background-size: 100%, 25%;
     background-position: center top;
-    height: 100vh;
 }
 
 .splashFlex {
@@ -46,6 +46,46 @@
 
 .splashFlexLogoItem {
     flex-basis: 300px;
+}
+
+.underground {
+    margin-top: 7.5rem;
+    margin-bottom: 5rem;
+}
+
+.cardFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.cardFlexItem {
+    width: 18rem;
+}
+
+.cardFlexItemHeader {
+    text-align: center;
+}
+
+.cardFlexItemIcon {
+    display: block;
+    margin: auto;
+    width: 3rem;
+}
+
+.cardFlexItemPayload {
+
+}
+
+.heroSentence {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 740px) {

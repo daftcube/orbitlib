@@ -5,7 +5,7 @@ theme:
   favicon: assets/orbitlib0.png
   custom_dir: overrides
   palette: 
-    - scheme: slate 
+    - scheme: slate
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -15,6 +15,11 @@ markdown_extensions:
         custom_icons:
           - overrides/.icons
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 repo_url: https://github.com/daftcube/orbitlib
 repo_name: daftcube/orbitlib
@@ -29,13 +34,13 @@ extra:
       name: OrbitLib on DevForum
     - icon: daftcube/roblox 
       link: https://devforum.roblox.com/u/daftcube/summary
-      name: Owen Bartolf on Github
+      name: Owen Bartolf on Roblox
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/in/owen-b-362785104/
       name: Owen Bartolf on LinkedIn
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/daftcube
-      name: Owen Bartolf on Roblox DevForum
+      name: Owen Bartolf on Roblox GitHub
     
 
 copyright: Copyright &copy; 2021 Owen Bartolf

@@ -21,11 +21,51 @@
             </div>
         </div>
         <div class="md-typeset splashHero2 mdx-container">
-            <div class="md-grid"></div>
-                <h1>Test Test</h1>
-                <p>About this!</p>
+            
+            <div class="underground heroSentence" style="margin-top:10rem">
+                <h2 class="cardFlexItemHeader">OrbitLib implements an optimized two-body orbital mechanics library for simulating celestial mechanics and space flight dynamics. All in Roblox.</h1>
             </div>
+            
+            <div class="md-grid underground">
+                <div class="cardFlex">
+                    <div class="cardFlexItem">
+                        <h2 class="cardFlexItemHeader">Aerospace-Grade</h2>
+                        <svg class="cardFlexItemIcon" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M13.13 22.19L11.5 18.36C13.07 17.78 14.54 17 15.9 16.09L13.13 22.19M5.64 12.5L1.81 10.87L7.91 8.1C7 9.46 6.22 10.93 5.64 12.5M19.22 4C19.5 4 19.75 4 19.96 4.05C20.13 5.44 19.94 8.3 16.66 11.58C14.96 13.29 12.93 14.6 10.65 15.47L8.5 13.37C9.42 11.06 10.73 9.03 12.42 7.34C15.18 4.58 17.64 4 19.22 4M19.22 2C17.24 2 14.24 2.69 11 5.93C8.81 8.12 7.5 10.53 6.65 12.64C6.37 13.39 6.56 14.21 7.11 14.77L9.24 16.89C9.62 17.27 10.13 17.5 10.66 17.5C10.89 17.5 11.13 17.44 11.36 17.35C13.5 16.53 15.88 15.19 18.07 13C23.73 7.34 21.61 2.39 21.61 2.39S20.7 2 19.22 2M14.54 9.46C13.76 8.68 13.76 7.41 14.54 6.63S16.59 5.85 17.37 6.63C18.14 7.41 18.15 8.68 17.37 9.46C16.59 10.24 15.32 10.24 14.54 9.46M8.88 16.53L7.47 15.12L8.88 16.53M6.24 22L9.88 18.36C9.54 18.27 9.21 18.12 8.91 17.91L4.83 22H6.24M2 22H3.41L8.18 17.24L6.76 15.83L2 20.59V22M2 19.17L6.09 15.09C5.88 14.79 5.73 14.47 5.64 14.12L2 17.76V19.17Z" />
+                        </svg>
+                        <p class="cardFlexItemPayload">
+                            OrbitLib was created from course material from university upper-division aerospace engineering courses. In addition to games, OrbitLib can help out with most first-semester orbital mechanics and space flight dynamics homework.
+                        </p>
+                    </div>
+
+                    <div class="cardFlexItem">
+                        <h2 class="cardFlexItemHeader">Lean</h2>
+                        <svg class="cardFlexItemIcon" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M23.5 17L18.5 22L15 18.5L16.5 17L18.5 19L22 15.5L23.5 17M6 2C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H13.81C13.45 21.38 13.2 20.7 13.08 20H6V4H13V9H18V13.08C18.33 13.03 18.67 13 19 13C19.34 13 19.67 13.03 20 13.08V8L14 2M8 12V14H16V12M8 16V18H13V16Z" />
+                        </svg>
+                        <p class="cardFlexItemPayload">
+                            OrbitLib does not require any outside third-party dependencies nor does it force developers to framework their games and applications in a particular way.
+                        </p>
+                    </div>
+
+                    <div class="cardFlexItem">
+                        <h2 class="cardFlexItemHeader">Powerful</h2>
+                        <svg class="cardFlexItemIcon" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12,2L16,6H13V13.85L19.53,17.61L21,15.03L22.5,20.5L17,21.96L18.53,19.35L12,15.58L5.47,19.35L7,21.96L1.5,20.5L3,15.03L4.47,17.61L11,13.85V6H8L12,2Z" />
+                        </svg>
+                        <p class="cardFlexItemPayload">
+                            Numerical analysis, orbital prediction, matrix transformations, Stumpff functions... Whatever it is, OrbitLib gets the hard parts done for you so you can focus on the mission.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="underground cardFlexItemHeader">
+                <h2>Now the Stars and within Reach!</h1>
+                <a class="md-button md-button--primary" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">Get Started</a>
+            </div>
+
         </div>
     </section>
-    {% block content %}{% endblock %}  
+    {% block content %}{% endblock %}
 {% endblock %}

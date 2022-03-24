@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block tabs %}
+    {{ super() }}
+    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+    <section class="md-typeset">
+        <div class="splashHero mdx-container">
+            <div class="md-grid"></div>
+                <div class="splashFlex">
+                    <div class="splashFlexLogoItem">
+                        <img src="assets/orbitlib0.svg" width="100%"/>
+                    </div>
+                    <div class="splashFlexTextItem">
+                        <h1 style="margin-bottom: 0.25rem;">OrbitLib</h1>
+                        <h2 style="margin-top: 0;">Space Flight Dynamics in Roblox</h2>
+                        <div>
+                            <a class="md-button md-button--primary" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">Get Started</a>
+                            <a class="md-button md-button--secondary" href="https://orbitlab.owenbartolf.com">WebGL Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md-typeset splashHero2 mdx-container">
+            <div class="md-grid"></div>
+                <h1>Test Test</h1>
+                <p>About this!</p>
+            </div>
+        </div>
+    </section>
+    {% block content %}{% endblock %}  
+{% endblock %}

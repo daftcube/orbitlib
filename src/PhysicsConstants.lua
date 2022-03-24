@@ -30,7 +30,7 @@ local module = {
     epsilon = 1e-6,
 
     -- One Gee = Acceleration due to Gravity on Earth ASL
-    gee = 0.00980665 -- m/(s^2)
+    gee = 0.00980665 -- km/(s^2)
 }
 
 return module

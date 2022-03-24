@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(0.425326, 0, 0, 0.425326, 119.685242, 144.27623)" style="">
+    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">
+      <path d="M 22.804 -7.433 L 4.601 63.302 L 75.336 81.505 L 93.539 10.77 L 22.804 -7.433 Z M 54.194 45.713 L 40.387 42.16 L 43.94 28.353 L 57.747 31.906 L 54.194 45.713 Z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1; fill: rgb(226, 35, 25);" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path d="M 254.778 167.424 C 250.483 175.889 222.356 176.753 180.99 169.692 C 91.857 154.479 -7.991 112.664 1.263 94.426 C 5.551 85.976 32.867 84.991 74.124 92.016 L 72.008 100.294 C 48.986 97.031 33.038 97.476 30.338 102.798 C 27.357 108.671 43.222 119.459 71.956 131.098 C 133.867 156.177 219.283 171.708 225.705 159.053 C 228.53 153.483 214.412 143.496 188.445 132.553 L 190.59 124.109 C 231.725 140.087 259.879 157.372 254.778 167.424 Z" style="stroke-width: 0px; stroke: rgb(226, 35, 25); fill: rgb(126, 6, 0);"/>
+</svg>

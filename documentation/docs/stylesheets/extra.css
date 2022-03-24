@@ -1,0 +1,61 @@
+:root {
+    --md-primary-fg-color:        #f44336;
+    --md-primary-fg-color--light: #ff7961;
+    --md-primary-fg-color--dark:  #ba000d;
+    --md-accent-fg-color:         #dd2c00;
+    --md-accent-fg-color--light:  #ff6434;
+    --md-accent-fg-color--dark:   #a30000;
+}
+
+.unitSpan {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.splashHero {
+    padding: 4rem 1rem;
+    background: url(/assets/layered-peaks.svg); /* Fallback */
+    background-image: url(/assets/layered-peaks.svg), linear-gradient(0deg, rgba(255,110,110,0.700717787114846) 0%, rgba(0,3,41,0) 100%); /* W3C */
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, 25%;
+    background-position: center bottom;
+    height: 98vh;
+}
+
+.splashHero2 {
+    padding: 4rem 1rem;
+    background: url(/assets/underground2.svg); /* Fallback */
+    background-image: url(/assets/underground2.svg); /* W3C */
+    background-repeat: no-repeat;
+    background-size: 100%, 25%;
+    background-position: center top;
+    height: 100vh;
+}
+
+.splashFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 0px;
+    height: 75%;
+}
+
+.splashFlexLogoItem {
+    flex-basis: 300px;
+}
+
+@media only screen and (max-width: 740px) {
+    .splashFlexTextItem {
+        text-align: center;
+        color: white;
+    }
+}
+@media only screen and (min-width: 740px) {
+    .splashFlexTextItem {
+        text-align: left;
+    }
+}

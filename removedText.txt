@@ -1,0 +1,24 @@
+- <code>[CelestialBody](./celestialBody.md) parentBody</code>: The body this object is orbiting.
+- <code>number positionX</code>: (:material-ruler: km) The x-coordinate of the orbiting object in ECI coordinates.
+- <code>number positionY</code>: (:material-ruler: km) The y-coordinate of the orbiting object in ECI coordinates.
+- <code>number positionZ</code>: (:material-ruler: km) The z-coordinate of the orbiting object in ECI coordinates.
+- <code>number velocityX</code>: (:material-ruler: km/s) The x-component of the orbiting object's velocity in ECI coordinates.
+- <code>number velocityY</code>: (:material-ruler: km/s) The y-component of the orbiting object's velocity in ECI coordinates.
+- <code>number velocityZ</code>: (:material-ruler: km/s) The z-component of the orbiting object's velocity in ECI coordinates.
+- <code>number currentTime</code>: (:material-ruler: s) The time at which the orbiting body is at the position and and has the velocity given above. 
+
+
+# OrbitLib: Aerospace-grade Keplerian Orbital Mechanics in Roblox Lua
+
+OrbitLib implements a two-body Keplerian orbital mechanics solver with utilities for rendering and patched conics.
+
+## Getting Started
+
+New to OrbitLib? Check out the Quickstart page.
+
+## Web Demo
+Check out the [Web Demo](https://orbitlab.owenbartolf.com/) for yourself!
+
+![](./public/orbitLabPreview.png)
+
+This demo was made using Typescript & Three.js frameworked in Svelte, but all the non-rendering orbital mechanics code shares a 1:1 feature parity with the Roblox Lua library. 

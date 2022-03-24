@@ -1,7 +1,7 @@
 --[[
     OrbitalMechanics/OrbitalMath.lua
 
-    Orbital Mechanics unfold over truly astronomical scales. Such scales
+    Orbital Mechanics unfolds over truly astronomical scales. Such scales
     cannot be accurately represented with 32-bit floating point numbers,
     so we define our own vector functions that use tuples of 64-bit raw
     Lua numbers.
@@ -87,7 +87,7 @@ end
     @param b2 (number) The y coordinate of vector b.
     @param b3 (number) The z coordinate of vector b.
 
-    @returns (number, number, number) The cross product between a and b.
+    @returns (number) The dot product between a and b.
 --]]
 function module.DotProduct(a1: number, a2: number, a3: number, b1: number, b2: number, b3: number)
     return a1*b1 + a2*b2 + a3*b3
@@ -163,12 +163,11 @@ end
 -------------------------------------------------------------------------------
 
 --[[
-    Calculates Mean Anomaly from Eccentric Anomaly Iteratively
+    Calculates Mean Anomaly from Eccentric Anomaly using a series derivation.
+    THIS IS NOT ACCURATE. Consider using the Universal Formulation instead.
 
     @param M (number) The mean anomaly.
     @param e (eccentricity) The eccentricity of the orbit.
-    @param tolerance (OPTIONAL) (number) Defines a tolerance for accuracy of
-    the numerical approximation. If not provided, 1e-8 will be used.
 
     @returns (number) The mean anomaly from the eccentric anomaly.
 
@@ -200,7 +199,7 @@ end
     @param V (number) The True Anomaly.
     @param e (number) The eccentricity of the orbit.
 
-    @returns (number) The Eccentric Anomaly from the Eccentric Anomaly
+    @returns (number) The Eccentric Anomaly from the True Anomaly
 --]]
 function module.EccentricFromTrue(V: number, e: number)
     return math.atan2(math.sqrt(1 - e*e) * math.sin(V), e + math.cos(V)) % TAU
@@ -240,12 +239,10 @@ local tanh = module.Tanh
 local atanh = module.Atanh
 
 --[[
-    Calculates Eccentric Anomaly from Hyperbolic Mean Anomaly Iteratively
+    Calculates Eccentric Anomaly from Hyperbolic Mean Anomaly using a series solution.
 
     @param M (number) The hyperbolic mean anomaly.
     @param e (eccentricity) The eccentricity of the orbit.
-    @param tolerance (OPTIONAL) (number) Defines a tolerance for accuracy of
-    the numerical approximation. If not provided, 1e-8 will be used.
 
     @returns (number) The mean anomaly from the eccentric anomaly.
 

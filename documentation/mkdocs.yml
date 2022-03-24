@@ -1,0 +1,41 @@
+site_name: OrbitLib
+theme: 
+  name: material
+  logo: assets/orbitlib1.png
+  favicon: assets/orbitlib0.png
+  custom_dir: overrides
+  palette: 
+    - scheme: slate 
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - md_in_html
+
+repo_url: https://github.com/daftcube/orbitlib
+repo_name: daftcube/orbitlib
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: daftcube/orbitlib1 
+      link: https://devforum.roblox.com/t/graphing-calculators-solving-algebraically-unsolvable-equations-orbital-mechanics-in-roblox-2/1462115
+      name: OrbitLib on DevForum
+    - icon: daftcube/roblox 
+      link: https://devforum.roblox.com/u/daftcube/summary
+      name: Owen Bartolf on Github
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/owen-b-362785104/
+      name: Owen Bartolf on LinkedIn
+    - icon: fontawesome/brands/github 
+      link: https://github.com/daftcube
+      name: Owen Bartolf on Roblox DevForum
+    
+
+copyright: Copyright &copy; 2021 Owen Bartolf

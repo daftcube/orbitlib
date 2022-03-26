@@ -84,8 +84,6 @@
 
 .heroSentence {
     width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @media only screen and (max-width: 740px) {
@@ -98,4 +96,9 @@
     .splashFlexTextItem {
         text-align: left;
     }
+}
+
+.demo {
+    width: 100%; 
+    height: calc(100vh - 2.5rem);
 }

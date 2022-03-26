@@ -214,7 +214,7 @@ Returns the current position and velocity at the given true anomaly relative to 
 
 ### GetPositionVelocityECI(...)
 ```lua
-function Orbit:GetPositionVelocityECI(trueAnomaly: number)(trueAnomaly: number) → number, number, number, number, number, number
+function Orbit:GetPositionVelocityECI(trueAnomaly: number) → number, number, number, number, number, number
 ```
 
 Returns the current position and velocity at the given true anomaly relative to the ECI coordinate system.
@@ -268,7 +268,7 @@ Returns the time to escape for a hyperbolic orbit. If the orbit is an ellipse, r
 
 **Returns:** The time to escape (:material-ruler: s).
 
-### GetTimeToEscape(...)
+### GetTimeOfFlight(...)
 
 ```lua
 function Orbit:GetTimeOfFlight(startTrueAnomaly: number, endTrueAnomaly: number) → number

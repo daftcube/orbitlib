@@ -1,4 +1,6 @@
-# OrbitLib
+
+![Logo](./documentation/docs/assets/orbitlibSplashReadme.png)
+
 OrbitLib is the first public two-body Keplerian orbital mechanics library for Roblox Luau.
 
 Each code file has documentation using Luadoc-style header comments

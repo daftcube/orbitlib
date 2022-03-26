@@ -1,4 +1,24 @@
 {% extends "base.html" %}
+{% block extrahead %}
+<!-- Primary Meta Tags -->
+<title>OrbitLib: Space Flight Dynamics in Roblox</title>
+<meta name="title" content="OrbitLib: Space Flight Dynamics in Roblox">
+<meta name="description" content="OrbitLib implements an optimized two-body orbital mechanics library for simulating celestial mechanics and space flight dynamics. All in Roblox.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orbitlib.owenbartolf.com/">
+<meta property="og:title" content="OrbitLib: Space Flight Dynamics in Roblox">
+<meta property="og:description" content="OrbitLib implements an optimized two-body orbital mechanics library for simulating celestial mechanics and space flight dynamics. All in Roblox.">
+<meta property="og:image" content="https://orbitlib.owenbartolf.com/assets/orbitlibSplashMeta.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://orbitlib.owenbartolf.com/">
+<meta property="twitter:title" content="OrbitLib: Space Flight Dynamics in Roblox">
+<meta property="twitter:description" content="OrbitLib implements an optimized two-body orbital mechanics library for simulating celestial mechanics and space flight dynamics. All in Roblox.">
+<meta property="twitter:image" content="https://orbitlib.owenbartolf.com/assets/orbitlibSplashMeta.png">
+{% endblock %}
 {% block tabs %}
     {{ super() }}
     <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
@@ -14,7 +34,7 @@
                         <h2 style="margin-top: 0;">Space Flight Dynamics in Roblox</h2>
                         <div>
                             <a class="md-button md-button--primary" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">Get Started</a>
-                            <a class="md-button md-button--secondary" href="https://orbitlab.owenbartolf.com">WebGL Demo</a>
+                            <a class="md-button md-button--secondary" href="/demo">WebGL Demo</a>
                         </div>
                     </div>
                 </div>
@@ -22,8 +42,8 @@
         </div>
         <div class="md-typeset splashHero2 mdx-container">
             
-            <div class="underground heroSentence" style="margin-top:10rem">
-                <h2 class="cardFlexItemHeader">OrbitLib implements an optimized two-body orbital mechanics library for simulating celestial mechanics and space flight dynamics. All in Roblox.</h1>
+            <div class="underground cardFlex" style="margin-top:10rem">
+                <h2 class="heroSentence cardFlexItemHeader">OrbitLib implements an optimized two-body orbital mechanics library for simulating celestial mechanics and space flight dynamics. All in Roblox.</h1>
             </div>
             
             <div class="md-grid underground">
@@ -61,7 +81,7 @@
             </div>
 
             <div class="underground cardFlexItemHeader">
-                <h2>Now the Stars and within Reach!</h1>
+                <h2>Now the Stars are within Reach!</h1>
                 <a class="md-button md-button--primary" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">Get Started</a>
             </div>
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="9.325 104.056 481.35 340.843" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(248, 248, 248);" d="M 9.325 250.296 L 490.675 249.704"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(248, 248, 248);" d="M 350.651 104.056 L 350.651 444.899"/>
+  <ellipse style="fill: rgba(216, 216, 216, 0); stroke: rgb(255, 1, 1);" cx="273.683" cy="250" rx="104.5" ry="58.615"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0); stroke-width: 6.82701px;" transform="matrix(0, 0.136047, -0.156907, 0, 427.508246, 124.590944)" d="M 876.341 607.552 A 125.865 125.865 0 0 1 920.8 363.935 L 920.8 489.8 Z" bx:shape="pie 920.8 489.8 0 125.865 200.685 360 1@fdbc7969"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(63, 166, 255);" d="M 350.838 249.893 L 208.871 203.942"/>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 4.9px;" x="338.131" y="228.192" transform="matrix(1.927915, 0, 0, 2.410256, -300.851353, -302.779912)">Θ</text>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(63, 166, 255);" d="M 350.649 249.887 L 394.291 249.887"/>
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(63, 166, 255);" cx="209.191" cy="203.95" rx="2.979" ry="2.979"/>
+</svg>

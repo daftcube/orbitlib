@@ -1,20 +1,24 @@
 # Design Notes
 
+This page explains some of the more controversial design decisions made during the development of OrbitLib that might not make sense at first glance.
+
 ## Coordinate Systems
 
-OrbitLib was built to be as close to common aerospace conventions as possible.
+OrbitLib was built to be as close to common aerospace conventions as possible. In astrodynamics, the coordinate system used has a different set of reference unit vectors. The differences are outlined in the figure below.
 
-These differences in coordinate systems can be corrected using a simple matrix change-of-coordinates like so:
+![Coordinates](./assets/orbitLibCoordinates.png)
+
+Luckily, these differences in coordinate systems can be easily corrected using a simple matrix change-of-coordinates like so:
 
 ```lua title="Conversion Examples"
 -- Convert from Roblox coordinates to OrbitLib coordinates.
 function RobloxToOrbitLib(x: number, y: number, z: number)
-    return y, x, z
+    return x, -z, y
 end
 
 -- Convert from OrbitLib coordinates to Roblox Coordinates.
 function OrbitLibToRoblox(i: number, j: number, k: number)
-    return j, i, k
+    return i, k, -j
 end
 ```
 
@@ -41,7 +45,7 @@ Why does Roblox use 32-bit floating point numbers in their vectors? It comes dow
 
 OrbitLib was intended to be a highly portable physics and mathematics library. Additionally, different projects have different visual styles and needs. In order to maintain portability between projects, OrbitLib does not ship with functions for rendering orbits.
 
-If an OrbitLib user wants a visual representation of their orbits, they must build it their own rendering functions. Don't fret though; there are many examples on how to do simple rendering in the Examples section. To make something more robust, we suggest two approaches:
+If an OrbitLib user wants a visual representation of their orbits, they must build it their own rendering functions. Don't fret though; there is an example of how to render OrbitLib components in the [OrbitLib 101 section](./OrbitLib 101/buildingBasicRenderer.md). To make something more robust, we suggest two approaches:
 
 ### Simple: Keep Everything Small
 
@@ -57,4 +61,4 @@ For more reading, see this [paper](https://citeseerx.ist.psu.edu/viewdoc/downloa
 
 Using this method, it is possible to move an effectively unlimited distance from the world's 'origin.' The drawback, however, is that this is very difficult to implement, especially in Roblox. It will take a talented developer to make this possible.
 
-Daftcube's Note: if you are even considering this, try to do it in a different engine. It's so much easier when you have a much greater degree of low-level control. I attempted to do this in Roblox, but got frusturated with it. Using Three.js, I was able to implement a floating origin system in a few days. You can see it in action in the [WebGL Demo](http://orbitlab.owenbartolf.com).
+Daftcube's Note: if you are even considering this, try to do it in a different engine. It's so much easier when you have a much greater degree of low-level control. I attempted to do this in Roblox, but got frusturated with it. Using Three.js, I was able to implement a floating origin system in a few days. You can see it in action in the [WebGL Demo](./demo.md).

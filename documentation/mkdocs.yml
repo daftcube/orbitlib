@@ -6,7 +6,29 @@ theme:
   custom_dir: overrides
   palette: 
     - scheme: slate
+  features:
+    - content.code.annotate
 
+nav:
+    - Home: 'index.md'
+    - Quickstart: 'quickstart.md'
+    - Installation: 'installation.md'
+    - OrbitLib 101:
+      - 'N-Body vs 2-Body': 'OrbitLib 101/nbodyVsTwoBody.md'
+      - 'Polar Coordinates': 'OrbitLib 101/polarCoordinates.md'
+      - 'Reference Frames & Conversions': 'OrbitLib 101/referenceFrames.md'
+      - 'Orbital Determination': 'OrbitLib 101/orbitDetermination.md'
+      - 'Orbital Prediction': 'OrbitLib 101/orbitalPrediction.md'
+      - 'Building a Basic Renderer': 'OrbitLib 101/buildingBasicRenderer.md'
+    - API Reference:
+      - 'CelestialBody': 'API Reference/celestialBody.md'
+      - 'DoubleMath2D': 'API Reference/doubleMath2D.md'
+      - 'Orbit': 'API Reference/orbit.md'
+      - 'OrbitalMath': 'API Reference/orbitalMath.md'
+      - 'PhysicsConstants': 'API Reference/physicsConstants.md'
+    - Design Notes: 'designNotes.md'
+    - Old Devblogs: 'oldDevblogs.md'
+    - WebGL Demo: 'demo.md'
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -20,6 +42,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
 
 repo_url: https://github.com/daftcube/orbitlib
 repo_name: daftcube/orbitlib
@@ -41,6 +67,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/daftcube
       name: Owen Bartolf on Roblox GitHub
+  analytics:
+    provider: google
+    property: G-JYVWBRVETE
     
 
 copyright: Copyright &copy; 2021 Owen Bartolf

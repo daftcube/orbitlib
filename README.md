@@ -1,9 +1,11 @@
 
 ![Logo](./documentation/docs/assets/orbitlibSplashReadme.png)
 
+[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
+
 OrbitLib is the first public two-body Keplerian orbital mechanics library for Roblox Luau.
 
-Each code file has documentation using Luadoc-style header comments
+## [Documentation](https://orbitlib.owenbartolf.com/)
 
 ## License
 
